@@ -26,4 +26,9 @@ setopt inc_append_history
 alias pj='npx projen'
 alias k='kubectl'
 
+# Nodebrew for Mac
+if [ $(uname) = Darwin ]; then
+  export PATH=$HOME/.nodebrew/current/bin:$PATH
+fi
+
 source $ZSH/oh-my-zsh.sh
