@@ -26,8 +26,11 @@ setopt inc_append_history
 alias pj='npx projen'
 alias k='kubectl'
 
-# Nodebrew for Mac
+# MacOS
 if [ $(uname) = Darwin ]; then
+  # Homebrew
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  # Nodebrew
   export PATH=$HOME/.nodebrew/current/bin:$PATH
 fi
 
