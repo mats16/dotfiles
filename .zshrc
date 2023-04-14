@@ -32,6 +32,8 @@ if [ $(uname) = Darwin ]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
   # Nodebrew
   export PATH=$HOME/.nodebrew/current/bin:$PATH
+  # Poetry
+  export PATH=$HOME/.local/bin:$PATH
   # kubectl
   export PATH=$HOME/bin:$PATH
 fi
