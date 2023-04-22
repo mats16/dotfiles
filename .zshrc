@@ -30,10 +30,16 @@ alias k='kubectl'
 if [ $(uname) = Darwin ]; then
   # Homebrew
   eval "$(/opt/homebrew/bin/brew shellenv)"
-  # Nodebrew
-  export PATH=$HOME/.nodebrew/current/bin:$PATH
+  
+  # Pyenv
+  eval "$(pyenv init -)"
+
   # Poetry
   export PATH=$HOME/.local/bin:$PATH
+
+  # Nodebrew
+  export PATH=$HOME/.nodebrew/current/bin:$PATH
+
   # kubectl
   export PATH=$HOME/bin:$PATH
 fi
