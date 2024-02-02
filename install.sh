@@ -6,12 +6,12 @@ oh_my_zsh() {
 }
 
 zshrc() {
-    ln -sf $(pwd)/.zshrc ~/.zshrc
+    cp $(pwd)/.zshrc ~/.zshrc
 }
 
 aws_sso() {
     mkdir ~/.aws
-    ln -sf $(pwd)/.aws/config ~/.aws/config
+    cp $(pwd)/.aws/config ~/.aws/config
 }
 
 oh_my_zsh
